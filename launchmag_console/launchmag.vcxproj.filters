@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="argtable">
+      <UniqueIdentifier>{1a849548-be38-45a6-b605-c68dbb3eb1cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{61785c69-212d-4ec8-be82-4a2f44134866}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="launchmag.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="argtable\arg_dbl.c">
+      <Filter>argtable</Filter>
+    </ClCompile>
+    <ClCompile Include="argtable\arg_end.c">
+      <Filter>argtable</Filter>
+    </ClCompile>
+    <ClCompile Include="argtable\arg_file.c">
+      <Filter>argtable</Filter>
+    </ClCompile>
+    <ClCompile Include="argtable\arg_int.c">
+      <Filter>argtable</Filter>
+    </ClCompile>
+    <ClCompile Include="argtable\arg_lit.c">
+      <Filter>argtable</Filter>
+    </ClCompile>
+    <ClCompile Include="argtable\arg_rem.c">
+      <Filter>argtable</Filter>
+    </ClCompile>
+    <ClCompile Include="argtable\arg_str.c">
+      <Filter>argtable</Filter>
+    </ClCompile>
+    <ClCompile Include="argtable\argtable2.c">
+      <Filter>argtable</Filter>
+    </ClCompile>
+    <ClCompile Include="argtable\getopt.c">
+      <Filter>argtable</Filter>
+    </ClCompile>
+    <ClCompile Include="argtable\getopt1.c">
+      <Filter>argtable</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="argtable\argtable2.h">
+      <Filter>argtable</Filter>
+    </ClInclude>
+    <ClInclude Include="argtable\getopt.h">
+      <Filter>argtable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\launchmag\LM_PacketFlags.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
