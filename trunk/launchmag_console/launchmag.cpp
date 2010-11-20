@@ -1,10 +1,11 @@
 #pragma warning( disable : 4996 )
 
 #include <stdio.h>
+#include <memory.h>
 
 #include "argtable/argtable2.h"
 
-#include "../launchmag/LM_PacketFlags.h"
+#include "../launchmag_firmware/LM_PacketFlags.h"
 
 #ifdef WIN32
 #include <fcntl.h>
@@ -130,6 +131,9 @@ bool LM_PrintInterpret(const char * track, int bitCount, int printFlags)
 				bitsRead = 0;
 			}
 		}
+		
+		if (currentByte != 0x1F)
+			return false;
 	}
 	else if (printFlags & LM_PRINTFLAG_TRACK1)
 	{
@@ -188,6 +192,9 @@ bool LM_PrintInterpret(const char * track, int bitCount, int printFlags)
 				bitsRead = 0;
 			}
 		}
+		
+		if (currentByte != 0x1F)
+			return false;
 	}
 
 	printf("%s", printableData);
